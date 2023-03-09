@@ -201,6 +201,7 @@ ul {
       justify-content: space-between;
       padding: 13px 15px;
 
+      h1,
       h2 {
         font-weight: 500;
         font-size: 14px;
@@ -254,9 +255,6 @@ ul {
           font-weight: 700;
           font-size: 32px;
           line-height: 42px;
-
-          /* 100 */
-
           color: #ffffff;
           margin-bottom: 21px;
         }
@@ -265,10 +263,6 @@ ul {
           font-weight: 400;
           font-size: 14px;
           line-height: 24px;
-          /* or 171% */
-
-          /* 400 */
-
           color: #c1c4cb;
           margin-bottom: 21px;
         }
@@ -277,10 +271,6 @@ ul {
           font-weight: 300;
           font-size: 28px;
           line-height: 37px;
-          /* identical to box height */
-
-          /* 100 */
-
           color: #ffffff;
           margin-bottom: 20px;
         }
@@ -332,6 +322,7 @@ ul {
           padding-left: 20px;
           border-radius: 4px 0px 0px 4px;
           border-left: 4px solid #e46643;
+          color: white;
           margin-bottom: 20px;
         }
 

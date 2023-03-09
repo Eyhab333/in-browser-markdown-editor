@@ -1,0 +1,334 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*##### for-phone-only ##########*/
+/*############ for-tablet-portrait-up ##############*/
+/*############ for-tablet-landscape-up #############*/
+/*############ for-desktop-up ###########*/
+@media (min-width: 1200px) {
+  body {
+    background: #151619;
+    color: #c1c4cb;
+  }
+  header {
+    background: #2b2d31;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    padding-right: 16px;
+  }
+  header .left,
+  header .right {
+    display: flex;
+    align-items: center;
+  }
+  header .icon-menu-container {
+    height: 72px;
+    width: 72px;
+    background: #35393f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 24px;
+  }
+  header .icon-menu-container .icon-menu {
+    width: 30px;
+    height: 18px;
+  }
+  header .logo {
+    height: 18px;
+    width: 131px;
+    margin-right: 29px;
+  }
+  header .line {
+    height: 40px;
+    width: 1px;
+    background: #5a6069;
+    margin-right: 24px;
+  }
+  header .document-name-container {
+    display: flex;
+    align-items: center;
+  }
+  header .document-name-container .icon-document {
+    height: 16px;
+    width: 13.7142858505px;
+    margin-right: 16px;
+  }
+  header .document-name-container .text .title {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    color: #c1c4cb;
+  }
+  header .document-name-container .text .document-name {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ffffff;
+  }
+  header .icon-delete {
+    height: 20px;
+    width: 18px;
+    margin-right: 24px;
+  }
+  header .save {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ffffff;
+    background: #e46643;
+    border-radius: 4px;
+    padding: 10px 16px;
+  }
+  header .save .icon-save {
+    height: 16px;
+    width: 16.0000286102px;
+    margin-right: 7.8px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  main .head {
+    background: #1d1f22;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 15px;
+  }
+  main .head h2 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: #c1c4cb;
+  }
+  main .markdown .content-markdown {
+    padding: 16px;
+  }
+  main .markdown .content-markdown .div + .div {
+    margin-top: 25px;
+  }
+  main .markdown .content-markdown .div .p-title {
+    margin-bottom: 21px;
+  }
+  main .markdown .content-markdown .div .details,
+  main .markdown .content-markdown .div .p-title,
+  main .markdown .content-markdown .div .last-div {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #c1c4cb;
+  }
+  main .markdown .content-markdown .last-div {
+    margin-top: 25px;
+  }
+  main .preview {
+    border-left: 1px solid #5a6069;
+  }
+  main .preview .icon-preview {
+    height: 11.1989612579px;
+    width: 16px;
+  }
+  main .preview .content-preview {
+    padding: 22px 24px 63px 23px;
+  }
+  main .preview .content-preview .welcome {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    /* 100 */
+    color: #ffffff;
+    margin-bottom: 21px;
+  }
+  main .preview .content-preview .markdown {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    /* 400 */
+    color: #c1c4cb;
+    margin-bottom: 21px;
+  }
+  main .preview .content-preview .how {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 37px;
+    /* identical to box height */
+    /* 100 */
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  main .preview .content-preview ol {
+    margin-bottom: 20px;
+  }
+  main .preview .content-preview ol li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    /* 400 */
+    color: #c1c4cb;
+  }
+  main .preview .content-preview .features {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height */
+    /* 100 */
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  main .preview .content-preview ul {
+    margin-bottom: 20px;
+  }
+  main .preview .content-preview ul li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    /* 400 */
+    color: #c1c4cb;
+  }
+  main .preview .content-preview blockquote {
+    background: #2b2d31;
+    border-radius: 4px;
+    padding: 24px 32px;
+    padding-left: 20px;
+    border-radius: 4px 0px 0px 4px;
+    border-left: 4px solid #e46643;
+    margin-bottom: 20px;
+  }
+  main .preview .content-preview .headings {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    /* 100 */
+    color: #ffffff;
+  }
+  main .preview .content-preview .to {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    /* 400 */
+    color: #c1c4cb;
+  }
+  main .preview .content-preview .lists {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    /* 100 */
+    color: #ffffff;
+  }
+  main .preview .content-preview .you {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    /* 400 */
+    color: #c1c4cb;
+  }
+  main .preview .content-preview .code-blocks {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    /* Orange */
+    color: #e46643;
+  }
+  main .preview .content-preview .this {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    /* 400 */
+    color: #c1c4cb;
+  }
+  main .preview .content-preview .last-section {
+    background: #2b2d31;
+    border-radius: 4px;
+  }
+  aside {
+    display: none;
+  }
+}
+/*############ for-big-desktop-up ##########*//*# sourceMappingURL=style.css.map */
